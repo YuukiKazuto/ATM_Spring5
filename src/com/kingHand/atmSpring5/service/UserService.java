@@ -17,6 +17,7 @@ public class UserService {
     }
     public void transfer(int id,int tId,double money){
         userDao.reduceMoney(id,money);
+        int a=1/0;
         userDao.addMoney(tId,money);
     }
 }
